@@ -23,8 +23,10 @@ class Named(AbstractDescriptor):
         self.visitors.visit(self)
 
     def find_alias(self, ownerCls):
-        for attr, value in tuple(ownerCls.__dict__.items()):
-            if value is self: return attr
+        for attr in dir(ownerCls):
+            value = getattr(ownerCls, attr)
+            if value is self:
+                return attr
 
     def get_alias(self, instance):
         if self.__alias__ is None:
