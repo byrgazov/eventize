@@ -2,7 +2,7 @@
 Eventize
 ********
 
-.. image:: https://pypip.in/v/eventize/badge.png
+.. image:: https://img.shields.io/pypi/v/eventize.svg
         :target: https://pypi.python.org/pypi/eventize
 
 
@@ -82,7 +82,7 @@ You can fix it like this::
   pip install nosecolor && pip install nosespec
 
 
-In order to have fast feedback with TDD loops, I develop with two virtualenvs (2.7 and 3.3 python versions) launched in a splited shell (tmux) which runs tests each time a file changes.
+In order to have fast feedback with TDD loops, I develop with two virtualenvs (2.7 and 3.x python versions) launched in a splited shell (tmux) which runs tests each time a file changes.
 Use the code below with option --with-watch to launch tests this way.
 
 Launching tests::
@@ -114,7 +114,7 @@ Building doc::
 Continuous Integration
 ----------------------
 
-CI is made by travis for python versions 2.7, 3.2 and 3.3.
+CI is made by travis for different python versions (trying to maintain compatibility with v2 python).
 
 It checks:
   * test suites (nosetest)
@@ -123,5 +123,8 @@ It checks:
   * `code coverage <https://coveralls.io/r/apieum/eventize>`_
 
 
-.. image:: https://secure.travis-ci.org/apieum/eventize.png?branch=master
-   :target: https://travis-ci.org/apieum/eventize
+.. image:: https://app.travis-ci.com/apieum/eventize.svg?branch=master
+    :target: https://app.travis-ci.com/github/apieum/eventize
+
+.. image:: https://coveralls.io/repos/github/apieum/eventize/badge.svg?branch=master
+    :target: https://coveralls.io/github/apieum/eventize?branch=master
